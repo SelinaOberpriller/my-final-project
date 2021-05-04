@@ -5,23 +5,92 @@ html,body{
   overflow-x: hidden;
 }
 
-
-/* fonts */
+/* Fonts */
 body{
-	font-family: Lato, "Helvetica Neue", Arial, sans-serif;
-	color: #333;
+	font-family: 'Quicksand', 'Calibri', sans-serif;
+	color: #D5D5D5;
+    background-color: #141517;
 }
-h1, h2, h3, h4, h5, h6 {
-	font-family: Georgia, "Times New Roman", Times, serif;
+
+h1.display-4 {
+  font-size: 3vw;
 }
-.lead-description{
-	font-family: Georgia, serif;
+
+@media (max-width: 1700px){
+  h1.display-4 {
+  font-size: 50px;
+  }
+}
+
+p.lead {
+  font-size: 1.6vw;
+}
+
+@media (max-width: 1700px){
+  p.lead {
+  font-size: 25px;
+  }
+}
+
+h3{
+  font-size: 25px;
+  font-style: italic;
+}
+
+div.main {
+  font-size: 25px;
+  
+}
+
+h4{
+  text-align: center;
+  font-size: 30px;
+  font-style: italic;
+}
+
+h5{
+  text-align: center;
+}
+
+@media (max-width: 1700px){
+  h4 and h5 {
+  font-size: 50px;
+  }
+
+.footer {
+  font-size: 20px;
+}
+
+.BU {
+  font-size: 20px;
 }
 
 
-/* CSS for hero image, either background photo or background video */
+/*Links*/
+/* unvisited link */
+a:link {
+  color:#9872AD;
+}
+
+/* visited link */
+a:visited {
+  color: #512A62;
+}
+
+/* mouse over link */
+a:hover {
+  color:#512A62;
+}
+
+/* selected link */
+a:active {
+  color:darkmagenta;
+}
+
+
+/* Hero Image */
 .hero{
-  background-image: url("../assets/sample-images/desk.jpg");
+  background-image: url("../assets/VF-images/Hero.JPG");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -29,28 +98,22 @@ h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
   position: relative;
 }
-.hero header{
-  background-color:rgba(0,0,0,0.75);
 
+.hero header{
+  background-color:rgba(0,0,0,0.2);
 }
-.hero header > *{
+
+.hero header{
   position: relative;
   z-index: 10;
 }
-.hero video{
-  position: absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
-  height: 100vh;
-  width: auto;
-  z-index: 1 !important;
-}
-@media (min-aspect-ratio:16/9){
-  .hero video{
-    width: 100vw;
-    height: auto;
-  }
+
+/* Interrupter Videos */
+.interrupter{
+  position: relative;
+  z-index: 1 !important; 
+  overflow: hidden;
+
 }
 
 
@@ -60,27 +123,3 @@ h1, h2, h3, h4, h5, h6 {
 .vh-400{ height: 400vh;}
 .vh-500{ height: 500vh;}
 .vh-600{ height: 600vh;}
-
-
-
-/* Sticky graphic */
-.scroll-graphic{
-  background-color:#000;
-  z-index: -2;
-}
-
-.image-holder{
-  background-image: url(../assets/sample-images/map-1.jpg);
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  background-attachment: fixed;
-  background-color: #000000;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
