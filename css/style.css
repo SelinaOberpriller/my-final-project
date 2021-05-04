@@ -13,12 +13,12 @@ body{
 }
 
 h1.display-4 {
-  font-size: 3vw;
+  font-size: 4vw;
 }
 
 @media (max-width: 1700px){
   h1.display-4 {
-  font-size: 50px;
+  font-size: 60px;
   }
 }
 
@@ -28,28 +28,31 @@ p.lead {
 
 @media (max-width: 1700px){
   p.lead {
-  font-size: 25px;
+  font-size: 28px;
   }
 }
 
+
+
 h3{
-  font-size: 25px;
+  font-size: 20px;
   font-style: italic;
 }
 
 div.main {
-  font-size: 25px;
+  font-size: 20px;
   
 }
 
 h4{
   text-align: center;
-  font-size: 30px;
+  font-size: 35px;
   font-style: italic;
 }
 
 h5{
   text-align: center;
+  color:dimgrey;
 }
 
 @media (max-width: 1700px){
@@ -62,7 +65,7 @@ h5{
 }
 
 .BU {
-  font-size: 20px;
+  font-size: 15px;
 }
 
 
@@ -100,7 +103,7 @@ a:active {
 }
 
 .hero header{
-  background-color:rgba(0,0,0,0.2);
+  background-color:rgba(0,0,0,0.3);
 }
 
 .hero header{
