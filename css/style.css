@@ -44,9 +44,10 @@ div.main {
 }
 
 h4{
+  font-family: 'Scope One', serif;
   text-align: center;
   font-size: 30px;
-  font-style: italic;
+  font-weight: 100
 }
 
 h5{
